@@ -6,38 +6,63 @@
     <style>
       /* GLOBAL STYLES */
       a {
-        color: red;
+        color: #c0f;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2em;
+        margin-top: 0;
+      }
+      /* HERO STYLES */
+      .full-hero {
+        background-color: #c7dbfc;
+        height: 50vh;
+        width: 100vw;
       }
       /* SOCIAL STYLES */
       .social-link {
-        color: blue;
+        background: rgba(150, 150, 150, 0.2);
+        color: #00f;
       }
       /* BIO STYLES */
+      .bio-wrapper {
+      }
       .bio-box {
         border: 1px solid black;
+        font-size: 1em;
+        width: 50%;
+      }
+      .bio-box h3 {
+        font-size: 1.5em;
+      }
+      .bio-copy {
+        font-size: 1em; 
       }
       .bio-copy a {
-        color: green;
-      }
-      div.bio-box {
-        border: 1px solid green;
+        color: #080;
       }
     </style>
   </head>
   <body>
-    <h1 class="social-link"> I'm an h1</h1>
+  <div class="full-hero hero-home">
+    <h1> I'm an h1</h1>
     <ul>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a class="social-link" href="https://example.com/">Link</a>
       </li>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a class="social-link" href="https://example.com/">Link</a>
       </li>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a class="social-link" href="https://example.com/">Link</a>
       </li>
     </ul>
+  </div>  
     <h2>I'm an h2</h2>
+  <div class="bio-wrapper">
     <div class="bio-box">
         <h3>Michael Hartl</h3>
       <a href="https://twitter.com/mhartl" class="social-link">here</a>
@@ -87,5 +112,6 @@
         The Future
       </p>
     </div>
+  </div>
   </body>
 </html>
